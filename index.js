@@ -1,17 +1,22 @@
 // index.js
-
 const express = require('express');
 const connectDB = require('./config/database');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
-// Connect to MongoDB
+// Kết nối đến MongoDB
 connectDB();
 
-// Other setup and middleware configurations...
+// Middleware để đọc dữ liệu từ req.body
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Start the server
+// Sử dụng route cho đăng ký và đăng nhập
+app.use('/auth', authRoutes);
+
+// Cấu hình cổng và khởi động server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server đang chạy ở cổng ${PORT}`);
 });
