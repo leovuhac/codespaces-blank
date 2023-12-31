@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leovuhac/VHProxy/issues"
   },
-  "homepage": "https://github.com/leovuhac/VHProxy#readme"
+  "homepage": "https://github.com/leovuhac/VHProxy#readme",
+  "dependencies": {
+    "mongoose": "^8.0.3"
+  }
 }
