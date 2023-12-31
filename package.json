@@ -1,0 +1,19 @@
+{
+  "name": "vhproxy",
+  "version": "1.0.0",
+  "description": "proxy-manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leovuhac/VHProxy.git"
+  },
+  "author": "FeVuHac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leovuhac/VHProxy/issues"
+  },
+  "homepage": "https://github.com/leovuhac/VHProxy#readme"
+}
